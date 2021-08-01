@@ -1,19 +1,16 @@
-"use sctrict";
+"use strict";
 
-//alert('hello');
+ let incr = 10,
+     decr = 10;
+
+// incr++;
+// decr--;
+
+console.log(incr++);
+console.log(decr--);
 
 
-// const result = confirm ("you?");
+console.log(5%2);
 
-// console.log(result);
+console.log(2*4 === +'8');
 
-// const answer = prompt("э, чо?", "норм");
-// console.log(answer);
-
-const answers = [];
-
-answers[0] = prompt ('Who name?', '');
-answers[1] = prompt ('Who firstname?', '');
-answers[2] = prompt ('age??', '');
-
-document.write(answers);
