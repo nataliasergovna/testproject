@@ -1,16 +1,44 @@
 "use strict";
 
- let incr = 10,
-     decr = 10;
+// 1)
 
-// incr++;
-// decr--;
-
-console.log(incr++);
-console.log(decr--);
+ let numberOfFilms = +prompt('Сколько фильмов посмотрели?', 0);
 
 
-console.log(5%2);
+//2)
 
-console.log(2*4 === +'8');
+//  const personalMovieDB = {
+//      count : numberOfFilms,
+//      movies : {
+//         filemName : '',
+//         gradeFilm : 0
+//      },
+//      actors : {},
+//      genres : [],
+//      privat : false
+//  };
 
+
+//  //3)
+//  personalMovieDB.movies.filemName = prompt('Последний просмотренный фильм?', 'Шерлок');
+//  personalMovieDB.movies.gradeFilm = prompt('Оцените фильм', 'от 1 до 10');
+
+
+ //2)
+
+ const personalMovieDB = {
+    count : numberOfFilms,
+    movies : {},
+    actors : {},
+    genres : [],
+    privat : false
+};
+
+
+//3)
+let film = prompt('Последний просмотренный фильм?', 'Шерлок'),
+    grade = prompt('Оцените фильм', 'от 1 до 10');
+
+    personalMovieDB.movies.film = grade; 
+
+    console.log(personalMovieDB);
