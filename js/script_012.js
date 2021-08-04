@@ -39,6 +39,6 @@
 let film = prompt('Последний просмотренный фильм?', 'Шерлок'),
     grade = prompt('Оцените фильм', 'от 1 до 10');
 
-    personalMovieDB.movies.film = grade; 
+    personalMovieDB.movies[film] = grade; 
 
     console.log(personalMovieDB);
