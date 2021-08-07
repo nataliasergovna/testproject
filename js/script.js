@@ -1,61 +1,38 @@
 "use strict";
 
-function showFirstMessage(text) {
-    console.log(text);
-    let num = 20;
-}
+ const arr =[86, 32, 13, 56, 18];
 
-showFirstMessage("hello");
+arr.sort(compareNum);
+console.log(arr);
 
-function calc (a, b){
-    return (a + b);
-}
+ function compareNum (a, b) {
+     return a - b;
+ }
+// // arr[99] = 0;
 
-console.log(calc(4, 3));
-console.log(calc(5, 6));
-console.log(calc(10, 6));
+// arr.forEach(function(item, i, arr) {
+//     console.log(`${i} : ${item} внутри массива ${arr}`);
 
-function ret()
-{
-    let num = 50;
-    return num;
-}
-
-const anoterNum = ret();
-console.log(anoterNum);
+// });
 
 
-const logger = function () {
-    console.log("hello")
+//arr.pop();
+// arr.push(10);
 
-};
+ 
+// console.log(arr);
 
-logger();
+// for (let i = 0; i <arr.length; i++)
+//  {
+//     console.log(arr[i]);
+//  }
 
-const str ="tEst";
-const arr = [1, 2, 3];
+//  for (let value of arr) {
+//      console.log(value);
+//  }
 
-console.log(str.toUpperCase());
-console.log(str.toLowerCase());
 
-console.log(str);
-
-let fruit = "Some fruit";
-
-console.log(fruit.indexOf("fruit"));
-
-const logg = "Hello World";
-
-console.log(logg.slice(6, 11));
-
-console.log(logg.substring(6, 11));
-
-console.log(logg.substr(6, 5));
-
-const num = 12.5;
-
-console.log(Math.round(num));
-
-const test = "12.2px";
-console.log(parseInt(test));
-console.log(parseFloat(test));
+//  const str = prompt ("", "");
+//  const products = str.split(", ");
+//  products.sort();
+//  console.log(products.join(';'));
